@@ -4,13 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Native Outdoors</title>
+    <title>Native Outdoors | Equipamiento de Trekking</title>
+    <meta name="description"
+        content="Native Outdoors: equipamiento de trekking, mochilas, carpas y accesorios para disfrutar de la naturaleza.">
+    <meta name="keywords" content="trekking, camping, mochilas, carpas, outdoor, senderismo, Native Outdoors">
+    <meta name="author" content="Native Outdoors">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
+
 <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
     <nav class="navbar">
         <img src="imgs/utils/nav-bar-logo.webp" alt="Logo Nav Bar" class="nav-logo">
         </div>
@@ -18,11 +24,16 @@
             <li><a href="#productos">Productos</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#reseñas">Reseñas</a></li>
+            <li>
+                <a href="#carrito" class="cart-link">
+                    🛒 Carrito (<span id="cart-count">0</span>)
+                </a>
+            </li>
         </ul>
     </nav>
     <header class="hero">
     </header>
-    <main aria-labelledby="title">
+    <main id="main-content" aria-labelledby="title">
 
         <section id="bienvenida" class="bienvenida">
             <h2 id="title">Bienvenidos a Native Outdoors</h2>
@@ -34,30 +45,26 @@
                 <p>Conocé algunos de los productos destacados que ofrecemos.</p>
             </header>
 
-            <div class="product-list">
-                <article class="product-card">
-                    <img src="imgs/productos/gorra.webp" alt="Gorra técnica para trekking color negro">
-                    <h3>Gorra Trek</h3>
-                    <p class="description">Liviana y respirable. Ideal para protegerte del sol en travesías.</p>
-                </article>
+            <div class="product-list" id="product-list"></div>
+            <div id="paginador" class="pagination"></div>
 
-                <article class="product-card">
-                    <img src="imgs/productos/mochila.webp" alt="Mochila de trekking 45 litros con múltiples bolsillos">
-                    <h3>Mochila 45 L</h3>
-                    <p class="description">Espalda acolchada y correas ajustables. Capacidad ideal para salidas
-                        cortas.
-                    </p>
-                </article>
+        </section>
 
-                <article class="product-card">
-                    <img src="imgs/productos/zapatilla.webp" alt="Zapatillas de trekking con suela de alto agarre">
-                    <h3>Zapatilla Trail</h3>
-                    <p class="description">Suela de gran tracción y tejido resistente. Perfectas para terrenos
-                        mixtos.
-                    </p>
-                </article>
+        <section id="carrito" class="cart">
+            <header>
+                <h2>Carrito de compras</h2>
+                <p>Revisá los productos que agregaste, modificá cantidades o eliminá los que ya no quieras.</p>
+            </header>
+
+            <div id="cart-items" class="cart-items">
+            </div>
+
+            <div class="cart-summary">
+                <p>Total de productos: <span id="cart-count-detail">0</span></p>
+                <p>Total de la compra: $<span id="cart-total">0</span></p>
             </div>
         </section>
+
 
         <section id="reseñas" class="reviews">
             <header>
@@ -130,6 +137,8 @@
         <p>© <span id="2025">2025</span> — Todos los derechos reservados · <a href="https://github.com/rsampaoli"
                 target="_blank" rel="noopener">rsampaoli</a></p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
