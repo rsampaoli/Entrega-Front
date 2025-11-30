@@ -1,10 +1,10 @@
-Native Outdoors — Pre-entrega Front
+# 🏔️ Native Outdoors — Entrega Final Front End
 
-Demo: https://rsampaoli.github.io/Pre-entrega-Front/
+**Demo Online:** https://rsampaoli.github.io/Entrega-Front/  
+**Repositorio:** https://github.com/rsampaoli/Entrega-Front
 
-Repositorio: https://github.com/rsampaoli/Pre-entrega-Front
-
-Sitio estático minimalista para práctica de Front End. Incluye navegación básica, sección de productos con Flexbox, reseñas con CSS Grid y un formulario de contacto conectado a Formspree, con fondo ilustrado y tipografía Roboto.
+Sitio web estático desarrollado como entrega final de la materia **Front End**.  
+Incluye navegación interna, catálogo dinámico con API, carrito persistente con localStorage, paginación, reseñas, formulario de contacto y mejoras de accesibilidad y SEO.
 
 ✨ Features
 
